@@ -74,6 +74,6 @@ mkdir $VERSION_PATH
 # Output the constituant parts into their respective files
 #
 ###
-echo $MAJOR > $VERSION_PATH/major
-echo $MINOR > $VERSION_PATH/minor
-echo $REVISION > $VERSION_PATH/rev
+echo -n $MAJOR > $VERSION_PATH/major
+echo -n $MINOR > $VERSION_PATH/minor
+echo -n $PATCH > $VERSION_PATH/patch

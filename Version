@@ -51,6 +51,15 @@ MAJOR=$(echo $TAG | awk -F '.' '{print $1}')
 MINOR=$(echo $TAG | awk -F '.' '{print $2}')
 PATCH=$(echo $TAG | awk -F '.' '{print $3}')
 
+###
+#
+# Delete the directory if it already exists
+#
+###
+if [ -d "$VERSION_PATH" ]
+then
+    rm -rf "$VERSION_PATH"
+fi
 
 
 ###
